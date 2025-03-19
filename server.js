@@ -71,6 +71,12 @@ app.use('/api/v1/user',userRoutes);
 app.use('/api/v1/job',jobsRoutes);
 
 // // Home route
+// Home route to redirect or show a message
+app.get('/', (req, res) => {
+    res.redirect('/api-doc');
+  });
+  
+
 app.use('/api-doc',swaggerUi.serve, swaggerUi.setup(spec));
 
 // // validation middleware

@@ -41,7 +41,7 @@ const options = {
     },
     servers: [
         {
-          url: "https://job-portal-backend-website.onrender.com/api/v1"
+          url: "https://job-portal-backend-website.onrender.com"
         }
       ]
       
